@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Don't create log file if the first arg is unimportant
+if [[ "$1" == "--version" ]]; then
+  # shellcheck disable=SC2068
+  terraform $@
+
+# Use TF action as file name, and pipe stdout and stderr into the same log file
+else
+  tmp_file="tf-$1.log"
+  rm -f "${tmp_file}"
+
+  # shellcheck disable=SC2068
+  terraform $@ 2>&1 | tee "${tmp_file}"
+fi
