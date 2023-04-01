@@ -1,6 +1,6 @@
 # terragrunt-run-all-with-better-output-logs
 
-A custom Terraform wrapper for Terragrunt to save the output into a file closer for each executed Terraform command.
+A custom Terraform wrapper for Terragrunt to save the output into a file for each executed Terraform command.
 
 ## Problem Set
 
