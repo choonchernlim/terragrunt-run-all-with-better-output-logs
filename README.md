@@ -72,7 +72,7 @@ modules
 │   │               ├── tf-plan.log     <=== Generated log file
 │   │               ├── variables.tf
 │   │               └── versions.tf
-│       └── terragrunt.hcl
+│   └── terragrunt.hcl
 └── module-2
     ├── .terragrunt-cache
     │   └── [HASH]
