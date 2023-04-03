@@ -4,7 +4,7 @@ A custom Terraform wrapper for Terragrunt to save the output into a file for eac
 
 ## Problem Set
 
-By default, when running `terragrunt run-all (apply|destroy) ...`, there is no way for the built-in solution to write
+By default, when running `terragrunt run-all (apply|destroy) ...`, there is no built-in solution to write
 the output into the log file. When piping the output to a log file from `terragrunt` command, all module logs are saved
 into the same log file, resulting in unreadable logs when running against many modules:
 
