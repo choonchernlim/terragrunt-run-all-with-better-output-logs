@@ -9,7 +9,7 @@ the output into the log file. When piping the output to a log file from `terragr
 into the same log file, resulting in unreadable logs when running against many modules:
 
 ```shell
-terragrunt run-all apply 2>&1 | tee tfapply.log  # NOT READABLE LOGS
+terragrunt run-all apply 2>&1 | tee tfapply.log  # YIKES!
 ```
 
 ## Solution
