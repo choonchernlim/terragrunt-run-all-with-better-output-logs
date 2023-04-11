@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 # Don't create log file if the first arg is unimportant
 if [[ "$1" == "--version" ]]; then
   # shellcheck disable=SC2068
